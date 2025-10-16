@@ -1,0 +1,35 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orbitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9f7ff"/>
+      <stop offset="45%" stop-color="#dbe4ff"/>
+      <stop offset="100%" stop-color="#f2fbff"/>
+    </linearGradient>
+    <radialGradient id="orbitHalo" cx="30%" cy="65%" r="70%">
+      <stop offset="0%" stop-color="#6153ff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#6153ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orbitStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c8cff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7c8cff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7c8cff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#orbitBg)"/>
+  <rect width="1200" height="800" fill="url(#orbitHalo)"/>
+  <g fill="#ffffff" fill-opacity="0.75" stroke="#c6d4ff" stroke-width="2">
+    <rect x="210" y="220" width="280" height="360" rx="28"/>
+    <rect x="520" y="260" width="480" height="180" rx="24" fill-opacity="0.55"/>
+    <rect x="520" y="480" width="360" height="140" rx="22" fill-opacity="0.6"/>
+  </g>
+  <g stroke="url(#orbitStroke)" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M160 200 H1040" />
+    <path d="M200 400 H1080" />
+    <path d="M240 600 H1120" />
+  </g>
+  <g fill="#7b7fff" opacity="0.35">
+    <circle cx="320" cy="540" r="90" />
+    <circle cx="840" cy="340" r="120" />
+    <circle cx="680" cy="590" r="80" />
+  </g>
+</svg>

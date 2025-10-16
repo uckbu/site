@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hand Tremor Mitigator — John Balci</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/zai6rra.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="project-detail">
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="../index.html">john balci</a>
+      <nav class="nav">
+        <a class="nav-link" href="../index.html#about">About</a>
+        <a class="nav-link" href="../index.html#work">Work</a>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Projects</button>
+          <div class="dropdown-panel" role="menu">
+            <a class="dropdown-link" href="CALM.html">Hand Tremor Mitigator</a>
+            <a class="dropdown-link" href="Lorekeepr.html">Lorekeepr</a>
+            <a class="dropdown-link" href="WINmdl.html">winMDL</a>
+          </div>
+        </div>
+        <a class="nav-link" href="../index.html#contact">Contact</a>
+        <a class="btn" href="../../John Balci Resume.pdf" download>Open Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero container">
+      <p class="eyebrow">Case Study</p>
+      <h1><a href="https://github.com/uckbu/piStabilizer" target="_blank" rel="noopener">Hand Tremor Mitigator</a></h1>
+      <p class="lede">Developed a wearable device to mitigate hand tremors for individuals with motion disorders, combining IMU sensors and computer vision to stabilize utensil movement and improve precision in daily tasks.</p>
+      <div class="detail-meta">
+        <div>
+          <span>Role</span>
+          <ul>
+            <li>Lead Engineer</li>
+            <li>Researcher</li>
+          </ul>
+        </div>
+        <div>
+          <span>Timeline</span>
+          <ul>
+            <li>School Project</li>
+            <li>Multiple Iterations</li>
+          </ul>
+        </div>
+        <div>
+          <span>Skills</span>
+          <ul>
+            <li>Arduino</li>
+            <li>IMU Sensors</li>
+            <li>Computer Vision</li>
+            <li>3D Printing</li>
+            <li>Embedded Systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-media container">
+      <div class="slideshow-container">
+        <div class="slide active">
+          <img src="../assets/calm1.jpg" alt="Hand Tremor Mitigator device prototype - Overview" />
+        </div>
+        <div class="slide">
+          <img src="../assets/calm2.png" alt="Hand Tremor Mitigator - Arduino IMU setup" />
+        </div>
+        <div class="slide">
+          <img src="../assets/calm3.png" alt="Hand Tremor Mitigator - Servo gimbal mechanism" />
+        </div>
+        <div class="slide">
+          <img src="../assets/calm4.png" alt="Hand Tremor Mitigator - Computer vision tracking" />
+        </div>
+
+
+        <button class="prev" aria-label="Previous image">❮</button>
+        <button class="next" aria-label="Next image">❯</button>
+
+        <div class="indicators">
+          <span class="indicator active" data-slide="0"></span>
+          <span class="indicator" data-slide="1"></span>
+          <span class="indicator" data-slide="2"></span>
+          <span class="indicator" data-slide="3"></span>
+          <span class="indicator" data-slide="4"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-body container">
+      <h2>Overview</h2>
+      <p>Motion disorders and tremors significantly limit individual capabilities and quality of life, particularly in precision tasks. Traditional stabilization tools are expensive and uncommon. This project developed CALM (Cancellation of Arbitrary Limb Motion), a wearable tremor mitigation device using electronics for mass-producible solutions.</p>
+
+      <h3>Methods</h3>
+      <p>The project explored two primary approaches: Arduino with IMU sensors and Raspberry Pi with computer vision.</p>
+      <p><strong>Arduino & IMU Approach:</strong> Used BNO055 IMU sensors to capture motion data and control servo-based gimbals for stabilization. Initial designs were desk-mounted but evolved to wrist-worn devices with improved ergonomics and 3-axis control.</p>
+      <p><strong>Raspberry Pi & CV Approach:</strong> Implemented computer vision using OpenCV to differentiate tremors from intended movement. Used color masking to track utensils and calculate stabilization angles, with ESP32 for servo control.</p>
+
+      <h3>Highlights</h3>
+      <ul>
+        <li>Developed multiple iterations of tremor mitigation devices, from desk-mounted to wrist-worn designs</li>
+        <li>Successfully integrated IMU sensors with servo gimbals for 3-axis stabilization</li>
+        <li>Implemented computer vision algorithms to distinguish tremors from intentional movement</li>
+        <li>Created lightweight, 3D-printed components for ergonomic wearable design</li>
+        <li>Explored sensor fusion techniques combining IMU and CV for improved accuracy</li>
+      </ul>
+
+      <h3>Results & Learnings</h3>
+      <p>The project demonstrated the feasibility of electronic tremor mitigation but revealed challenges in differentiating tremors from movement and achieving smooth stabilization. Key learnings included HSV color tuning for CV, stabilization engineering principles, and sensor fusion techniques.</p>
+      <p>Future improvements could include triple-perspective angle calculations, smoother servos, and integration of IMU and CV methods for more robust detection and stabilization.</p>
+    </section>
+
+    <section class="project-next container">
+      <a class="btn ghost" href="../index.html#projects">← Back to all projects</a>
+      <a class="btn primary" href="./Lorekeepr.html">Next: Lorekeepr</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> John Balci — Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

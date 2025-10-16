@@ -1,0 +1,29 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sdet-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3fbff"/>
+      <stop offset="45%" stop-color="#d8f4ff"/>
+      <stop offset="100%" stop-color="#eef7ff"/>
+    </linearGradient>
+    <radialGradient id="sdet-glow" cx="40%" cy="60%" r="65%">
+      <stop offset="0%" stop-color="#63d7ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#63d7ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sdet-bg)"/>
+  <rect width="1200" height="800" fill="url(#sdet-glow)"/>
+  <g opacity="0.7" fill="#ffffff">
+    <rect x="220" y="220" width="320" height="200" rx="30"/>
+    <rect x="580" y="260" width="360" height="160" rx="28" fill-opacity="0.75"/>
+    <rect x="460" y="480" width="420" height="200" rx="34" fill-opacity="0.6"/>
+  </g>
+  <g stroke="#70cfff" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M240 260 H960" />
+    <path d="M240 340 H960" />
+    <path d="M240 520 H960" />
+  </g>
+  <g opacity="0.4">
+    <circle cx="320" cy="560" r="100" fill="#8de0ff" />
+    <circle cx="860" cy="360" r="120" fill="#c3f0ff" />
+  </g>
+</svg>

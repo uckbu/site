@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>winMDL — John Balci</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/zai6rra.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="project-detail">
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="../index.html">john balci</a>
+      <nav class="nav">
+        <a class="nav-link" href="../index.html#about">About</a>
+        <a class="nav-link" href="../index.html#work">Work</a>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Projects</button>
+          <div class="dropdown-panel" role="menu">
+            <a class="dropdown-link" href="CALM.html">Hand Tremor Mitigator</a>
+            <a class="dropdown-link" href="Lorekeepr.html">Lorekeepr</a>
+            <a class="dropdown-link" href="WINmdl.html">winMDL</a>
+          </div>
+        </div>
+        <a class="nav-link" href="../index.html#contact">Contact</a>
+        <a class="btn" href="../../John Balci Resume.pdf" download>Open Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero container">
+      <p class="eyebrow">Case Study</p>
+      <h1><a href="https://github.com/uckbu/winMDL" target="_blank" rel="noopener">winMDL — Simple Meteor Detector (Webcam)</a></h1>
+      <p class="lede">A computer vision system that transforms any webcam into an automated meteor detector, capturing fleeting moments of cosmic beauty as they streak across the night sky.</p>
+      <div class="detail-meta">
+        <div>
+          <span>Role</span>
+          <ul>
+            <li>Python Developer</li>
+            <li>Computer Vision Engineer</li>
+          </ul>
+        </div>
+        <div>
+          <span>Timeline</span>
+          <ul>
+            <li>Ongoing Project</li>
+            <li>Open Source</li>
+          </ul>
+        </div>
+        <div>
+          <span>Skills</span>
+          <ul>
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>YOLO/ONNX</li>
+            <li>Computer Vision</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-media container">
+      <img src="../assets/project-palette.svg" alt="Palette Studio visuals" />
+    </section>
+
+    <section class="project-body container">
+      <h2>Overview</h2>
+      <p>winMDL democratizes meteor observation by leveraging computer vision to automatically detect and record meteor events. What was once the domain of specialized astronomical equipment and trained observers is now accessible through consumer webcams and open-source software.</p>
+
+      <p>The system continuously monitors the night sky through a webcam, analyzing each frame for the characteristic signatures of meteors—bright, fast-moving objects that appear suddenly and disappear just as quickly. When a potential meteor is detected, the system captures a complete "event" including precious moments before and after the streak, preserving these ephemeral astronomical phenomena as video clips.</p>
+
+      <h3>Technical Approach</h3>
+      <p>The project offers two complementary detection methods: a local model using YOLO object detection in ONNX format for complete offline operation, and a cloud-based approach that leverages hosted AI models for enhanced accuracy. Both methods are designed to be accessible to users without deep computer vision expertise.</p>
+      <p>Since this was made for the TJHSST astronomy lab as an open-source educational tool, those students have access to my Roboflow API and account details.</p>
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Automated Detection:</strong> Real-time analysis of webcam feeds for meteor-like patterns</li>
+        <li><strong>Event Capture:</strong> Intelligent buffering that includes pre and post-detection frames for complete meteor events</li>
+        <li><strong>Dual Architecture:</strong> Local and cloud processing options for different use cases and connectivity scenarios</li>
+        <li><strong>Flexible Configuration:</strong> Adjustable sensitivity and timing parameters for various observing conditions</li>
+        <li><strong>Open Source:</strong> Built with Python, OpenCV, and modern computer vision frameworks</li>
+      </ul>
+
+      <h3>Implementation</h3>
+      <p>The core system processes video frames at high frequency, applying computer vision algorithms to identify potential meteors. Upon detection, it creates timestamped video files that document the complete event—from the meteor's first appearance through its disappearance. The system is optimized for low false-positive rates while maintaining sensitivity to genuine astronomical events.</p>
+
+      <h3>Practical Considerations</h3>
+      <p>Designed for real-world astronomical observation, the system includes optimizations for outdoor use, motion gating to reduce unnecessary processing, and configurable parameters for different sky conditions and camera setups. Whether used for citizen science, educational purposes, or personal astronomical exploration, winMDL makes meteor hunting accessible to anyone with a computer and webcam.</p>
+
+      <h3>Impact</h3>
+      <p>This project bridges the gap between professional astronomy and public engagement with the night sky. It was built to be integrated into the school's local intranet, allowing highschoolers to interact and engage with the night sky without needing specialized equipment or expertise. It was designed to foster curiosity and be improved over the years as future generations contribute to them in their senior research.</p>
+    </section>
+
+    <section class="project-next container">
+      <a class="btn ghost" href="./Lorekeepr.html">← Back to Lorekeepr</a>
+      <a class="btn primary" href="../index.html">Home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> John Balci — Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

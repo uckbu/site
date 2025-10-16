@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lorekeepr — John Balci</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/zai6rra.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="project-detail">
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="../index.html">john balci</a>
+      <nav class="nav">
+        <a class="nav-link" href="../index.html#about">About</a>
+        <a class="nav-link" href="../index.html#work">Work</a>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Projects</button>
+          <div class="dropdown-panel" role="menu">
+            <a class="dropdown-link" href="CALM.html">Hand Tremor Mitigator</a>
+            <a class="dropdown-link" href="Lorekeepr.html">Lorekeepr</a>
+            <a class="dropdown-link" href="WINmdl.html">winMDL</a>
+          </div>
+        </div>
+        <a class="nav-link" href="../index.html#contact">Contact</a>
+        <a class="btn" href="../../John Balci Resume.pdf" download>Open Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero container">
+      <p class="eyebrow">Case Study</p>
+      <h1>Lorekeepr</h1>
+            <p class="lede">A comprehensive story bible builder using local and cloud LLMs, featuring manuscript analysis, character extraction, relationship mapping, timeline visualization, and intelligent question answering for writers and storytellers.</p>
+      <div class="detail-meta">
+                <div>
+          <span>Role</span>
+          <ul>
+            <li>Full-Stack Developer</li>
+            <li>AI Integration Specialist</li>
+          </ul>
+        </div>
+        <div>
+          <span>Timeline</span>
+          <ul>
+            <li>Independent Project</li>
+            <li>Ongoing Development</li>
+          </ul>
+        </div>
+        <div>
+          <span>Skills</span>
+          <ul>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>LLM Integration</li>
+            <li>NLP</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-media container">
+      <img src="../assets/project-orbit.svg" alt="Lorekeepr story bible application interface" />
+    </section>
+
+    <section class="project-body container">
+      <h2>Overview</h2>
+      <p>Lorekeepr is a powerful tool for writers and storytellers that automatically builds comprehensive story bibles from manuscripts. It combines local and cloud LLM capabilities with advanced NLP processing to extract characters, relationships, timelines, plot threads, and inconsistencies, providing writers with intelligent insights and question-answering capabilities.</p>
+
+      <h3>Key Features</h3>
+      <p>The application offers a robust extraction pipeline with an intuitive UI featuring manuscript editing, character management, relationship mapping, timeline visualization, thread tracking, inconsistency detection, and an interactive Ask console for grounded questions about the story.</p>
+      <p><strong>AI Integration:</strong> Supports both local LLMs via OpenAI-compatible APIs (tested with Ollama) and cloud providers like OpenAI, with local AI as the default for privacy and cost efficiency.</p>
+      <p><strong>NLP Processing:</strong> Includes optional spaCy-backed character discovery with health checks and self-tests for reliable entity extraction.</p>
+
+      <h3>Technical Implementation</h3>
+      <p>Built with a TypeScript/React frontend and Node.js/Express backend, Lorekeepr provides cross-platform support for Windows, macOS, and Linux. The backend serves the built frontend as a single publishable server, simplifying deployment.</p>
+      <p>The system features a full-screen Codex Logs view for switching between Characters, Relationships, Timeline (flowchart), Threads, and Inconsistencies, with seamless integration back to the manuscript editor.</p>
+
+      <h3>Highlights</h3>
+      <ul>
+        <li>Automatic story bible generation from manuscript text</li>
+        <li>Dual LLM support (local Ollama + cloud OpenAI)</li>
+        <li>Advanced NLP with spaCy and Stanza fallback</li>
+        <li>Interactive timeline and relationship visualizations</li>
+        <li>Intelligent question-answering grounded in story context</li>
+        <li>Cross-platform desktop application</li>
+        <li>Real-time inconsistency detection</li>
+        <li>Character watchlist and relationship mapping</li>
+      </ul>
+
+      <h3>Development & Deployment</h3>
+      <p>Lorekeepr includes comprehensive setup scripts for Windows (start-windows.bat) and Unix systems (start-unix.sh), with npm scripts for development and production builds. The application supports both development mode with separate frontend/backend servers and production mode with the backend serving the frontend.</p>
+      <p>Health checks and self-tests ensure NLP components are functioning correctly, with automatic fallback between spaCy and Stanza for maximum compatibility.</p>
+      <p>Lorekeepr is actively in development, though the majority of features are functional and ready for launch.</p>
+    </section>
+
+    <section class="project-next container">
+      <a class="btn ghost" href="./CALM.html">← Back to Hand Tremor Mitigator</a>
+      <a class="btn primary" href="./WINmdl.html">Next: winMDL</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> John Balci — Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

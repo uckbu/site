@@ -1,0 +1,35 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="atlasGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cfd7ff"/>
+      <stop offset="50%" stop-color="#8db8ff"/>
+      <stop offset="100%" stop-color="#e5f2ff"/>
+    </linearGradient>
+    <radialGradient id="atlasGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#4f6dff" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#4f6dff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="atlasLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3f4feb" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#3f4feb" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#3f4feb" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#atlasGradient)"/>
+  <rect width="1200" height="800" fill="url(#atlasGlow)"/>
+  <g stroke="url(#atlasLine)" stroke-width="4" stroke-linecap="round" opacity="0.75">
+    <path d="M80 220 H1120" />
+    <path d="M120 420 H1080" />
+    <path d="M200 620 H1000" />
+  </g>
+  <g opacity="0.5">
+    <circle cx="320" cy="320" r="110" fill="#ffffff" fill-opacity="0.32"/>
+    <circle cx="820" cy="240" r="150" fill="#ffffff" fill-opacity="0.18"/>
+    <circle cx="620" cy="520" r="180" fill="#ffffff" fill-opacity="0.22"/>
+  </g>
+  <g opacity="0.85" fill="#1f2e6f">
+    <rect x="220" y="280" width="280" height="180" rx="20" fill="#fff" fill-opacity="0.7"/>
+    <rect x="540" y="280" width="360" height="180" rx="24" fill="#ffffff" fill-opacity="0.45"/>
+    <rect x="260" y="520" width="260" height="120" rx="22" fill="#ffffff" fill-opacity="0.4"/>
+  </g>
+</svg>
